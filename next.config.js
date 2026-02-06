@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Force output to standalone to ensure correct file generation for Vercel
+  output: 'standalone',
   images: {
     remotePatterns: [
       {
