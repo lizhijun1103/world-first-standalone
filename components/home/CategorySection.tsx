@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { categories } from "@/lib/data";
+import { useLanguage } from "@/components/LanguageProvider";
 
 export function CategorySection() {
+  const { language } = useLanguage();
+
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8">
       {categories.map((category) => (
@@ -15,14 +20,14 @@ export function CategorySection() {
             <div className="absolute inset-0 overflow-hidden rounded-full">
               <Image
                 src={category.image}
-                alt={category.name}
+                alt={category.name[language]}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
             </div>
           </div>
           <span className="text-sm font-bold text-slate-700 group-hover:text-orange-600 transition-colors">
-            {category.name}
+            {category.name[language]}
           </span>
         </Link>
       ))}
