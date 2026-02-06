@@ -7,7 +7,7 @@ export function CategorySection() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">热门分类</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">热门分类-</h2>
           <p className="text-gray-500">Pick Your Favorite</p>
         </div>
         
