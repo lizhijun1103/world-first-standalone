@@ -40,7 +40,7 @@ export default function Home() {
               </div>
               
               <h1 className="text-4xl font-extrabold tracking-tight sm:text-6xl md:text-7xl text-gray-900">
-                给爱宠 <span className="text-rose-500">最温暖</span> 的陪伴
+                给郑老板 <span className="text-rose-500">最温暖</span> 的陪伴
               </h1>
               
               <p className="max-w-[600px] text-gray-500 md:text-xl leading-relaxed">
