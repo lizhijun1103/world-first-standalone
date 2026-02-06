@@ -5,14 +5,18 @@ import Image from "next/image";
 import { ShoppingBag, CheckCircle, Search, Truck, ShieldCheck, Star, Package, ArrowRight, Globe } from "lucide-react";
 import { CategorySection } from "@/components/home/CategorySection";
 import { FeaturedProducts } from "@/components/home/FeaturedProducts";
+import { ContactModal } from "@/components/ContactModal";
 import { useLanguage } from "@/components/LanguageProvider";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export default function Home() {
   const { t, language, setLanguage } = useLanguage();
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   return (
     <div className="flex flex-col min-h-screen font-sans">
+      <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
       {/* Navigation */}
       <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6 mx-auto">
@@ -49,12 +53,12 @@ export default function Home() {
              <Link className="hidden sm:inline-flex text-sm font-medium text-slate-600 hover:text-slate-900" href="#">
               {t("nav.login")}
             </Link>
-            <Link
+            <button
               className="inline-flex h-9 items-center justify-center rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-slate-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-950"
-              href="#"
+              onClick={() => setIsContactOpen(true)}
             >
               {t("nav.contact")}
-            </Link>
+            </button>
           </div>
         </div>
       </header>
@@ -289,7 +293,7 @@ export default function Home() {
               <ul className="space-y-2 text-sm text-slate-500">
                 <li><Link href="#" className="hover:text-slate-900">{t("footer.story")}</Link></li>
                 <li><Link href="#" className="hover:text-slate-900">{t("footer.qc")}</Link></li>
-                <li><Link href="#" className="hover:text-slate-900">{t("footer.contact")}</Link></li>
+                <li><button onClick={() => setIsContactOpen(true)} className="hover:text-slate-900 text-left">{t("footer.contact")}</button></li>
               </ul>
             </div>
             <div>

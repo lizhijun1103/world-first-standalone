@@ -86,7 +86,18 @@ export const dictionary = {
       placeholder: "输入您的工作邮箱",
       button: "申请批发账号",
       contact: "有问题？联系我们：",
-    }
+    },
+    contact: {
+      title: "联系店主",
+      subtitle: "填写下表，我们将在 24 小时内回复您。",
+      name: "姓名",
+      email: "工作邮箱",
+      company: "公司名称 (选填)",
+      subject: "主题",
+      message: "留言内容",
+      submit: "发送留言",
+      success: "发送成功！我们将尽快联系您。",
+    },
   },
   en: {
     nav: {
@@ -175,6 +186,17 @@ export const dictionary = {
       placeholder: "Enter your business email",
       button: "Apply for Account",
       contact: "Questions? WhatsApp us:",
+    },
+    contact: {
+      title: "Contact Store Owner",
+      subtitle: "Fill out the form below and we'll get back to you within 24 hours.",
+      name: "Name",
+      email: "Business Email",
+      company: "Company Name (Optional)",
+      subject: "Subject",
+      message: "Message",
+      submit: "Send Message",
+      success: "Message sent! We'll be in touch soon.",
     }
   }
 };
