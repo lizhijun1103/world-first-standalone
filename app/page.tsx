@@ -119,8 +119,8 @@ export default function Home() {
               <div className="mx-auto lg:mr-0 relative w-full max-w-[500px] aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-stone-200">
                 <div className="absolute inset-0 bg-slate-900/5 z-10"></div>
                 <Image 
-                  src="https://images.unsplash.com/photo-1601647998802-9a57b08d0034?auto=format&fit=crop&w=1200&q=80" 
-                  alt="Organized pet shop shelf"
+                  src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1200&q=80" 
+                  alt="Pet shop interior with supplies"
                   fill
                   className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
                   priority
