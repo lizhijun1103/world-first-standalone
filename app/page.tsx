@@ -44,7 +44,7 @@ export default function Home() {
       </header>
 
       <main className="flex-1 bg-[#fdfbf7]">
-        {/* Hero Section - Professional & Trustworthy */}
+        {/* Hero Section - B2B Focus */}
         <section className="w-full py-12 md:py-24 lg:py-32 border-b border-stone-100">
           <div className="container px-4 md:px-6 mx-auto">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
@@ -52,20 +52,20 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="inline-flex items-center gap-2">
                     <div className="inline-flex items-center rounded-full border border-stone-200 bg-white px-3 py-1 text-sm font-medium text-slate-800 shadow-sm">
-                      <span className="flex h-2 w-2 rounded-full bg-emerald-500 mr-2"></span>
-                      jimspaw.com 官方独立站
+                      <span className="flex h-2 w-2 rounded-full bg-blue-600 mr-2"></span>
+                      B2B Wholesale Platform
                     </div>
                     <div className="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-sm font-medium text-amber-800">
-                      📝 Jim's Note: 本周新测 5 款冻干，仅 1 款过关
+                      📈 Market Insight: Freeze-dried treats sales up 30% in Q3
                     </div>
                   </div>
                   
                   <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl xl:text-6xl/none text-slate-900">
-                    不只是卖货，<br />
-                    更是您爱宠的 <span className="text-amber-600">专属买手</span>
+                    Boost Your Pet Aisle Profits with <span className="text-amber-600">Curated Best-Sellers</span>
                   </h1>
                   <p className="max-w-[600px] text-slate-600 md:text-xl leading-relaxed">
-                    Jim's Paw 拒绝盲目铺货。每一件商品都经过“成分分析、实物亲测、长期试用”三道严选工序。我们帮您避坑，只留最好的。
+                    Source high-margin pet supplies directly from verified factories. 
+                    Low MOQ. 7-day fast shipping to US/EU. We handle the QC and logistics, you handle the sales.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -73,48 +73,50 @@ export default function Home() {
                     className="inline-flex h-12 items-center justify-center rounded-lg bg-amber-600 px-8 text-sm font-semibold text-white shadow-lg shadow-amber-200 transition-all hover:bg-amber-700 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                     href="#featured"
                   >
-                    浏览严选清单
+                    View Wholesale Catalog
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                   <Link
                     className="inline-flex h-12 items-center justify-center rounded-lg border border-stone-200 bg-white px-8 text-sm font-semibold text-slate-900 shadow-sm transition-all hover:bg-stone-50 hover:border-stone-300"
                     href="#"
                   >
-                    查看选品标准
+                    Calculate ROI
                   </Link>
                 </div>
-                {/* Trust Badges */}
+                {/* Trust Badges - B2B */}
                 <div className="flex items-center gap-6 text-sm text-slate-500 pt-4">
                   <div className="flex items-center gap-2">
                     <ShieldCheck className="h-5 w-5 text-emerald-600" />
-                    <span>100% 正品溯源</span>
+                    <span>Factory Direct Price</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Truck className="h-5 w-5 text-blue-600" />
+                    <span>Fast Global Shipping</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Star className="h-5 w-5 text-amber-500" />
-                    <span>店主亲测推荐</span>
+                    <span>High Margin Verified</span>
                   </div>
                 </div>
               </div>
               
-              {/* Visual - High Quality Placeholder/Image */}
+              {/* Visual - B2B Context (Warehouse/Retail Shelf) */}
               <div className="mx-auto lg:mr-0 relative w-full max-w-[500px] aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-stone-200">
-                {/* Fallback color block / Image */}
                 <div className="absolute inset-0 bg-slate-900/5 z-10"></div>
-                {/* Using a high quality Unsplash image for Pet Owner/Curator vibe */}
                 <img 
-                  src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1200&q=80" 
-                  alt="Jim playing with a dog"
+                  src="https://images.unsplash.com/photo-1601647998802-9a57b08d0034?auto=format&fit=crop&w=1200&q=80" 
+                  alt="Organized pet shop shelf"
                   className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
                 />
-                {/* Overlay Card */}
+                {/* Overlay Card - Business Metrics */}
                 <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur p-4 rounded-xl shadow-lg border border-stone-100 z-20">
                   <div className="flex items-center gap-4">
-                    <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 font-bold text-lg">
-                      J
+                    <div className="h-12 w-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold text-lg">
+                      $
                     </div>
                     <div>
-                      <p className="font-bold text-slate-900">Jim's Selection</p>
-                      <p className="text-xs text-slate-500">本月已亲测 23 款新品，仅上架 4 款</p>
+                      <p className="font-bold text-slate-900">Retail Partner Success</p>
+                      <p className="text-xs text-slate-500">"Average margin increased by 40% after switching to Jim's Paw."</p>
                     </div>
                   </div>
                 </div>
@@ -123,15 +125,15 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Value Prop / Process Section - Inspired by JingSourcing "How it works" */}
+        {/* Value Prop / Process Section - B2B Sourcing */}
         <section id="process" className="w-full py-20 bg-white">
           <div className="container px-4 md:px-6 mx-auto">
             <div className="text-center mb-16 max-w-2xl mx-auto">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-4">
-                为什么选择 Jim's Paw?
+                Sourcing Made Simple & Profitable
               </h2>
               <p className="text-slate-500 text-lg">
-                不同于普通宠物店，我们采用“买手制”运营模式。没有海量铺货，只有经过验证的精品。
+                We bridge the gap between Asian factories and Western retailers. No more Alibaba headaches.
               </p>
             </div>
             
@@ -144,9 +146,9 @@ export default function Home() {
                 <div className="w-14 h-14 bg-stone-50 rounded-xl flex items-center justify-center text-stone-600 mb-6 mx-auto md:mx-0">
                   <Search className="h-7 w-7" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">1. 全球搜寻</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">1. Data-Driven Selection</h3>
                 <p className="text-slate-500 leading-relaxed">
-                  深入供应链源头，从原材料到生产工艺严格考察。我们不看品牌广告，只看产品配方表和检测报告。
+                  We analyze Amazon & Chewy trends to identify potential best-sellers. We only source products with proven market demand.
                 </p>
               </div>
 
@@ -155,9 +157,9 @@ export default function Home() {
                 <div className="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center text-amber-600 mb-6 mx-auto md:mx-0">
                   <CheckCircle className="h-7 w-7" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">2. 亲身试用</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">2. Rigorous QC</h3>
                 <p className="text-slate-500 leading-relaxed">
-                  所有上架商品，必须经过 Jim 自家宠物至少 2 周的试用。适口性、耐用度、安全性，一项不达标直接淘汰。
+                  Our local team inspects every batch before shipment. We filter out defects so you don't face customer returns.
                 </p>
               </div>
 
@@ -166,44 +168,44 @@ export default function Home() {
                 <div className="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-6 mx-auto md:mx-0">
                   <Package className="h-7 w-7" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">3. 严选交付</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">3. Door-to-Door Delivery</h3>
                 <p className="text-slate-500 leading-relaxed">
-                  精细化打包，附赠详细的使用建议卡片。不仅是收到一个包裹，更是收到一份专业的养宠方案。
+                  DDP shipping available. We handle customs and duties. Goods arrive directly at your store or warehouse.
                 </p>
               </div>
             </div>
 
-            {/* Rejected List Concept */}
+            {/* Quality Control Report (formerly Rejected List) */}
             <div className="bg-stone-50 rounded-2xl p-8 border border-stone-100 max-w-4xl mx-auto">
                <div className="flex flex-col md:flex-row items-center gap-6">
                  <div className="flex-shrink-0 w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center font-bold">
-                   X
+                   QC
                  </div>
                  <div className="flex-1 text-center md:text-left">
-                   <h3 className="text-lg font-bold text-slate-900 mb-1">本月淘汰清单 (Rejected List)</h3>
+                   <h3 className="text-lg font-bold text-slate-900 mb-1">Strict Filter Policy</h3>
                    <p className="text-slate-600 text-sm">
-                     为了您的安心，我们本月测试并淘汰了 <span className="font-bold text-red-500">18</span> 款样品：
-                     包括 3 款诱食剂超标零食，5 款做工粗糙的玩具，以及 10 款性价比极低的网红产品。
+                     For every product you see, we rejected <span className="font-bold text-red-500">20+</span> alternatives.
+                     Last month, we disqualified 15 factories due to inconsistent packaging or delayed lead times.
                    </p>
                  </div>
                  <Link href="#" className="text-sm font-bold text-slate-900 hover:text-amber-600 underline underline-offset-4">
-                   查看淘汰详情
+                   Read QC Standards
                  </Link>
                </div>
             </div>
           </div>
         </section>
 
-        {/* Categories Section - Clean Blocks */}
+        {/* Categories Section */}
         <section className="w-full py-20 bg-[#fdfbf7]">
           <div className="container px-4 md:px-6 mx-auto">
             <div className="flex justify-between items-end mb-10">
               <div>
-                <h2 className="text-2xl font-bold text-slate-900">核心品类</h2>
-                <p className="text-slate-500 mt-2">精简分类，快速找到所需</p>
+                <h2 className="text-2xl font-bold text-slate-900">Trending Categories</h2>
+                <p className="text-slate-500 mt-2">High-turnover categories for Q4</p>
               </div>
               <Link href="#" className="text-amber-600 font-medium hover:underline flex items-center gap-1">
-                查看全部 <ArrowRight className="h-4 w-4" />
+                View All <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
             
@@ -211,38 +213,38 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Featured Products */}
+        {/* Featured Products - B2B */}
         <section id="featured" className="w-full py-20 bg-white">
           <div className="container px-4 md:px-6 mx-auto">
             <div className="text-center mb-12">
-              <span className="text-amber-600 font-semibold tracking-wider text-sm uppercase">Curated Collection</span>
-              <h2 className="text-3xl font-bold text-slate-900 mt-2">本月店主推荐</h2>
+              <span className="text-amber-600 font-semibold tracking-wider text-sm uppercase">Wholesale Picks</span>
+              <h2 className="text-3xl font-bold text-slate-900 mt-2">Best Sellers for Small Retailers</h2>
             </div>
             <FeaturedProducts />
           </div>
         </section>
 
-        {/* CTA / Newsletter */}
+        {/* CTA / Newsletter - Wholesale Application */}
         <section className="w-full py-20 bg-[#1a1f2c] text-white">
           <div className="container px-4 md:px-6 mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">不确定买什么适合自家毛孩子？</h2>
+            <h2 className="text-3xl font-bold mb-4">Ready to stock your shelves?</h2>
             <p className="text-slate-300 max-w-2xl mx-auto mb-8 text-lg">
-              订阅 "Jim 的养宠周报"，每周五发送。不推销，只分享本周学到的养宠干货和避坑指南。
+              Join 2,000+ independent retailers. Get access to our full catalog with wholesale pricing and MOQ details.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <div className="relative">
                 <input 
                   type="email" 
-                  placeholder="输入您的邮箱地址" 
+                  placeholder="Enter your business email" 
                   className="h-12 w-full sm:w-80 px-4 rounded-lg bg-slate-800 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
                 />
               </div>
               <button className="h-12 px-8 rounded-lg bg-amber-600 text-white font-bold hover:bg-amber-700 transition-colors">
-                免费订阅
+                Apply for Account
               </button>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              或者直接添加 Jim 的个人微信咨询：<span className="text-amber-400">Jimspaw_Helper</span>
+              Questions? WhatsApp us: <span className="text-amber-400">+1 (555) 123-4567</span>
             </p>
           </div>
         </section>

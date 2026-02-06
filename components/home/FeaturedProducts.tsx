@@ -17,17 +17,19 @@ export function FeaturedProducts() {
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
             />
-            {product.tags.length > 0 && (
-              <div className="absolute top-3 left-3 flex flex-col gap-1">
-                {product.tags.map((tag) => (
-                  <span key={tag} className="bg-slate-900/90 backdrop-blur-sm text-white text-[10px] px-2.5 py-1 rounded-full font-bold shadow-sm">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            )}
+            {/* B2B Badge */}
+            <div className="absolute top-3 left-3 flex flex-col gap-1">
+              <span className="bg-amber-100/90 backdrop-blur-sm text-amber-800 text-[10px] px-2.5 py-1 rounded-full font-bold shadow-sm border border-amber-200">
+                MOQ: 10
+              </span>
+              {product.tags.includes("爆款") && (
+                <span className="bg-red-500/90 text-white text-[10px] px-2.5 py-1 rounded-full font-bold shadow-sm">
+                  Hot Seller
+                </span>
+              )}
+            </div>
             
-            {/* Add Button Overlay */}
+            {/* Action Overlay */}
             <div className="absolute bottom-3 right-3 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
               <Button size="icon" className="h-10 w-10 rounded-full bg-slate-900 text-white hover:bg-amber-600 hover:text-white shadow-lg border-0">
                 <ShoppingCart className="h-5 w-5" />
@@ -43,21 +45,28 @@ export function FeaturedProducts() {
               </Link>
             </h3>
             
-            {/* Jim's Take - Simulating curator note */}
-            <div className="mb-3 p-2 bg-stone-50 rounded-lg border border-stone-100 text-xs text-stone-600 relative">
-              <Quote className="h-3 w-3 text-amber-400 absolute -top-1.5 -left-1.5 fill-current" />
-              <span className="font-semibold text-amber-700">Jim:</span> 亲测适口性极佳，挑食怪首选。
+            {/* Market Insight - B2B Focus */}
+            <div className="mb-3 p-2 bg-blue-50 rounded-lg border border-blue-100 text-xs text-slate-600 relative">
+              <span className="font-semibold text-blue-700 block mb-1">Market Insight:</span> 
+              Reorder rate &gt; 40%. High margin item for boutique stores.
             </div>
 
-            <div className="mt-auto flex items-center gap-2">
-              <span className="text-lg font-extrabold text-amber-700">
-                ¥{product.price.toFixed(2)}
-              </span>
-              {product.originalPrice > product.price && (
-                <span className="text-xs text-stone-400 line-through font-medium">
-                  ¥{product.originalPrice.toFixed(2)}
-                </span>
-              )}
+            <div className="mt-auto">
+               <div className="flex items-baseline gap-2 mb-1">
+                 <span className="text-xs text-slate-400">Wholesale:</span>
+                 <span className="text-lg font-extrabold text-amber-700">
+                   Login
+                 </span>
+               </div>
+               <div className="flex items-baseline gap-2">
+                 <span className="text-xs text-slate-400">MSRP:</span>
+                 <span className="text-sm text-slate-600 font-medium">
+                   ¥{product.originalPrice.toFixed(2)}
+                 </span>
+                 <span className="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-1.5 py-0.5 rounded ml-auto">
+                   Est. Margin: 50%
+                 </span>
+               </div>
             </div>
           </div>
         </div>
