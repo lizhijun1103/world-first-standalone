@@ -29,14 +29,14 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         <div className="mb-8">
           <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
             <Link href="/" className="hover:text-primary">
-              首页
+              Home
             </Link>
             <span>/</span>
             <span className="text-gray-900">{category.name}</span>
           </div>
           <h1 className="text-3xl font-bold text-gray-900">{category.name}</h1>
           <p className="mt-2 text-gray-500">
-            共找到 {categoryProducts.length} 件商品
+            Found {categoryProducts.length} products
           </p>
         </div>
 
@@ -81,11 +81,11 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                   <div className="mt-3 flex items-end justify-between">
                     <div className="flex flex-col">
                       <span className="text-lg font-bold text-red-600">
-                        ¥{product.price.toFixed(2)}
+                        ${product.price.toFixed(2)}
                       </span>
                       {product.originalPrice > product.price && (
                         <span className="text-xs text-gray-400 line-through">
-                          ¥{product.originalPrice.toFixed(2)}
+                          ${product.originalPrice.toFixed(2)}
                         </span>
                       )}
                     </div>
@@ -100,10 +100,10 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           </div>
         ) : (
           <div className="text-center py-20 bg-white rounded-xl border border-dashed">
-            <p className="text-gray-500">该分类下暂无商品</p>
+            <p className="text-gray-500">No products found in this category</p>
             <Link href="/">
               <Button variant="outline" className="mt-4">
-                返回首页
+                Back to Home
               </Button>
             </Link>
           </div>

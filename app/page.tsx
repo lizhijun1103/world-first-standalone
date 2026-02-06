@@ -17,27 +17,27 @@ export default function Home() {
           </Link>
           <nav className="hidden md:flex gap-8">
             <Link className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors" href="#process">
-              选品流程
+              Sourcing Process
             </Link>
             <Link className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors" href="#featured">
-              严选推荐
+              Curated Products
             </Link>
             <Link className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors" href="#">
-              养宠指南
+              Retail Insights
             </Link>
             <Link className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors" href="#">
-              关于 Jims
+              About Us
             </Link>
           </nav>
           <div className="flex items-center gap-4">
              <Link className="hidden sm:inline-flex text-sm font-medium text-slate-600 hover:text-slate-900" href="#">
-              登录
+              Login
             </Link>
             <Link
               className="inline-flex h-9 items-center justify-center rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-slate-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-950"
               href="#"
             >
-              联系店主
+              Contact Sales
             </Link>
           </div>
         </div>
@@ -257,28 +257,28 @@ export default function Home() {
                 Jim's Paw
               </div>
               <p className="text-sm text-slate-500">
-                jimspaw.com - 您的私人宠物选品顾问。<br/>
-                用心选好物，陪伴毛孩子健康成长。
+                jimspaw.com - Your Trusted Wholesale Pet Supply Partner.<br/>
+                Connecting retailers with verified factories.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-slate-900 mb-4">购物指南</h4>
+              <h4 className="font-semibold text-slate-900 mb-4">Buying Guide</h4>
               <ul className="space-y-2 text-sm text-slate-500">
-                <li><Link href="#" className="hover:text-slate-900">如何订购</Link></li>
-                <li><Link href="#" className="hover:text-slate-900">配送政策</Link></li>
-                <li><Link href="#" className="hover:text-slate-900">退换货说明</Link></li>
+                <li><Link href="#" className="hover:text-slate-900">How to Order</Link></li>
+                <li><Link href="#" className="hover:text-slate-900">Shipping Policy</Link></li>
+                <li><Link href="#" className="hover:text-slate-900">Returns & Claims</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-slate-900 mb-4">关于我们</h4>
+              <h4 className="font-semibold text-slate-900 mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-slate-500">
-                <li><Link href="#" className="hover:text-slate-900">品牌故事</Link></li>
-                <li><Link href="#" className="hover:text-slate-900">选品标准</Link></li>
-                <li><Link href="#" className="hover:text-slate-900">联系我们</Link></li>
+                <li><Link href="#" className="hover:text-slate-900">Our Story</Link></li>
+                <li><Link href="#" className="hover:text-slate-900">QC Standards</Link></li>
+                <li><Link href="#" className="hover:text-slate-900">Contact Us</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-slate-900 mb-4">关注我们</h4>
+              <h4 className="font-semibold text-slate-900 mb-4">Follow Us</h4>
               <div className="flex gap-4">
                 {/* Social Icons Placeholder */}
                 <div className="w-8 h-8 bg-slate-200 rounded-full"></div>

@@ -22,7 +22,7 @@ export function FeaturedProducts() {
               <span className="bg-amber-100/90 backdrop-blur-sm text-amber-800 text-[10px] px-2.5 py-1 rounded-full font-bold shadow-sm border border-amber-200">
                 MOQ: 10
               </span>
-              {product.tags.includes("爆款") && (
+              {(product.tags.includes("Best Seller") || product.tags.includes("Hot")) && (
                 <span className="bg-red-500/90 text-white text-[10px] px-2.5 py-1 rounded-full font-bold shadow-sm">
                   Hot Seller
                 </span>
@@ -61,7 +61,7 @@ export function FeaturedProducts() {
                <div className="flex items-baseline gap-2">
                  <span className="text-xs text-slate-400">MSRP:</span>
                  <span className="text-sm text-slate-600 font-medium">
-                   ¥{product.originalPrice.toFixed(2)}
+                   ${product.originalPrice.toFixed(2)}
                  </span>
                  <span className="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-1.5 py-0.5 rounded ml-auto">
                    Est. Margin: 50%
