@@ -118,7 +118,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
               <Button 
                 type="submit" 
-                className="w-full h-11 text-base bg-slate-900 hover:bg-slate-800"
+                className="w-full h-11 text-base bg-slate-900 text-white hover:bg-slate-800"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "..." : t("contact.submit")}

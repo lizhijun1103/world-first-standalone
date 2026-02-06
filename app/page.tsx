@@ -50,9 +50,6 @@ export default function Home() {
               <Globe className="h-4 w-4" />
               {language === "zh" ? "English" : "中文"}
             </Button>
-             <Link className="hidden sm:inline-flex text-sm font-medium text-slate-600 hover:text-slate-900" href="#">
-              {t("nav.login")}
-            </Link>
             <button
               className="inline-flex h-9 items-center justify-center rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-slate-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-950"
               onClick={() => setIsContactOpen(true)}
